@@ -12,7 +12,7 @@ import net.lingala.zip4j.util.Zip4jConstants;
 
 public class ZipLoop {
     public static void main(String[] args) throws Exception {
-    	if (args.length != 1) { 
+    	if (args.length != 2) { 
     		System.err.println("error");
     		System.exit(1);
     	}
