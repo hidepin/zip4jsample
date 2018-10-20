@@ -12,6 +12,6 @@ public class ZipLoop {
 		String zipFilePath = args[1];
 		String password = "password";
 
-		new ZipUtil().zip(source, zipFilePath, password);
+		new ZipUtil().unzip(source, zipFilePath, password);
 	}
 }
