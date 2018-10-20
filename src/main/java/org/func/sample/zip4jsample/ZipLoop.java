@@ -12,6 +12,6 @@ public class ZipLoop {
 		String zipFilePath = args[1];
 		String password = "password";
 
-		new ZipUtil(Zip4jConstants.ENC_METHOD_AES, Zip4jConstants.AES_STRENGTH_256).zip(source, zipFilePath, password);
+		ZipUtil.zip(source, zipFilePath, password);
 	}
 }
