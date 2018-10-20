@@ -62,6 +62,7 @@ public class ZipUtil {
 			byte[] readBuff = new byte[4096];
 			int readLen = -1;
 			while ((readLen = inputStream.read(readBuff)) != -1) {
+				System.out.println("hello");
 				outputStream.write(readBuff, 0, readLen);
 			}
 
