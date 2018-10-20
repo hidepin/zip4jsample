@@ -2,7 +2,6 @@ package org.func.sample.zip4jsample;
 
 import java.io.File;
 
-import net.lingala.zip4j.core.NativeStorage;
 import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.model.ZipParameters;
@@ -32,8 +31,9 @@ public class ZipUtil {
 
 			File inputFile = new File(input);
 			if (inputFile.isDirectory()) {
-				zipFile.createZipFileFromFolder(new NativeStorage(inputFile), parameters, false, 0);
+				zipFile.createZipFileFromFolder(inputFile, parameters, false, 0);
 			} else {
+				zipFile.addFile(inputFile, parameters);
 				zipFile.addFile(inputFile, parameters);
 			}
 
