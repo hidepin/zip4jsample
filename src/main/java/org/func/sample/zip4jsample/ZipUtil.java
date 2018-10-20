@@ -54,7 +54,7 @@ public class ZipUtil {
         parameters.setEncryptionMethod(encryptionMethod);
         parameters.setAesKeyStrength(aesKeyStrength);
         parameters.setPassword(password);
-        parameters.setDefaultFolderPath(new NativeStorage(new File(new File(input).getParent())));
+        parameters.setDefaultFolderPath(new NativeStorage(new File(input)));
 
         try {
             outputStream = new ZipOutputStream(new NativeFile(new File(output), "rw"), zipModel);
