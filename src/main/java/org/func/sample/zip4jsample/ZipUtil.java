@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.io.ZipOutputStream;
 import net.lingala.zip4j.model.ZipModel;
