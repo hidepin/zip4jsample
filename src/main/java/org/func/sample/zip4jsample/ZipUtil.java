@@ -30,9 +30,9 @@ public class ZipUtil {
 			parameters.setAesKeyStrength(aesKeyStrength);
 			parameters.setPassword(password);
 
-			File inputFile = new File(input);
+			NativeStorage inputFile = new NativeStorage(new File(input));
 			if (inputFile.isDirectory()) {
-				zipFile.createZipFileFromFolder(new NativeStorage(inputFile), parameters, false, 0);
+				zipFile.createZipFileFromFolder(inputFile, parameters, false, 0);
 			} else {
 				zipFile.addFile(inputFile, parameters);
 			}
