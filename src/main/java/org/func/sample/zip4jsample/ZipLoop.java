@@ -13,9 +13,9 @@ public class ZipLoop {
 		String password = "password";
 		String method = args[2];
 		
-		if (method == "zip") {
+		if (method.equals("zip")) {
 			new ZipUtil().zip(source, zipFilePath, password);
-		} else if (method == "unzip") {
+		} else if (method.equals("unzip")) {
 			new ZipUtil().unzip(source, zipFilePath, password);
 		}
 	}
