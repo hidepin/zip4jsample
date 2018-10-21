@@ -86,6 +86,6 @@ public class ZipUtil {
         if (zipFile.isEncrypted()) {
             zipFile.setPassword(password);
         }
-        zipFile.extractFile("null", "/dev");
+        zipFile.extractFile("file", output);
     }
 }
