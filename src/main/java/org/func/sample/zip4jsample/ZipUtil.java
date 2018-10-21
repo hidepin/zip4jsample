@@ -18,7 +18,7 @@ import net.lingala.zip4j.util.Zip4jConstants;
 public class ZipUtil {
 
     private int compressionMethod = Zip4jConstants.COMP_DEFLATE;
-    private int compressionLevel = Zip4jConstants.DEFLATE_LEVEL_MAXIMUM;
+    private int compressionLevel = Zip4jConstants.DEFLATE_LEVEL_ULTRA;
     private int encryptionMethod = Zip4jConstants.ENC_METHOD_AES;
     private int aesKeyStrength = Zip4jConstants.AES_STRENGTH_256;
 
