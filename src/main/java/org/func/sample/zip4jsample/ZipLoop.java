@@ -16,7 +16,7 @@ public class ZipLoop {
 		if (method.equals("zip")) {
 			new ZipUtil().zip(source, zipFilePath, password);
 		} else if (method.equals("unzip")) {
-			for (int i = 0; i < 3; i++) {
+			for (int i = 0; i < 6; i++) {
 				new ZipThread(source, zipFilePath, password, loop, sleep).start();
 			}
 		}
